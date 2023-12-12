@@ -61,7 +61,7 @@
             width: 100vw;
             height: 100vh;
             inset: 0;
-            z-index: 1;
+            z-index: -1;
             background-color: black;
             display: flex;
             justify-content: center;
@@ -160,7 +160,6 @@
             width: 100%;
             height: 100%;
             position: fixed;
-            z-index: 4;
         }
 
         .enter-nav-buttons {
@@ -170,31 +169,37 @@
         .l-btn {
             left: 0;
             margin-left: 4rem;
+            z-index: 4;
         }
 
         .t-btn {
             position: absolute;
             top: 0;
+            z-index: 4;
         }
 
         .r-btn {
             right: 0;
             margin-right: 4rem;
+            z-index: 4;
         }
 
         .b-btn {
             position: absolute;
             bottom: 0;
+            z-index: 4;
         }
 
         .enter-footer {
             width: 100%;
+            width: fit-content;
             text-align: center;
             position: absolute;
             bottom: 0;
             margin-bottom: 2em;
             position: fixed;
             z-index: 3;
+            left: 45%;
         }
     </style>
 
